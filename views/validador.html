@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+    	<form name="userForm" ng-submit="submitForm(userForm.$valid)" class="col s8 offset-s3" novalidate>
+        	<div class="row">
+            	<!-- NAME -->
+            	<div class="input-field col s4">
+                	<input id="form_name" name="name" type="text"  ng-model="user.name" required>
+                    <label for="name">Name</label>
+                </div>
+                <!-- USERNAME -->
+                <div class="input-field col s4">
+                    <input id="Username" name="username" type="text" ng-model="user.username" ng-minlength="3" ng-maxlength="8" required>
+                    <label for="Username">Username</label>
+                </div>
+                <!-- EMAIL -->
+                <div class="row">
+                	<div class="input-field col s8">
+                        <input id="Email" name="email" type="email" ng-model="user.email">
+                        <label for="Email">Email</label>
+                    </div>				
+                </div>
+                <!-- SUBMIT BUTTON -->
+                <div class="row">
+                	<button type="submit" class=" btn col s4 offset-s2">Enviar</button>
+                </div>
+                <div class="row">
+    	            <div class="error col s8">
+    	            	<p ng-show="userForm.name.$invalid && !userForm.name.$pristine" >Seu nome é obrigatório</p>
+    	            	<p ng-show="userForm.username.$error.minlength" >Username no mínimo 3 caracteres.</p>
+    	                <p ng-show="userForm.username.$error.maxlength">Username no máximo 8 caracteres.</p>
+    	                <p ng-show="userForm.email.$invalid && !userForm.email.$pristine">Informe um e-mail válido.</p>
+    	            </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

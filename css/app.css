@@ -1,0 +1,55 @@
+*{
+	list-style: none;
+	 font-family: GillSans, Calibri, Trebuchet, sans-serif;
+}
+
+h1{
+	width: 100%;
+	text-align: center;
+	font-weight: 600;
+}
+
+ul li p{
+	display: inline;
+	border-right: 2px dotted black;
+	padding: 0 4px 0 4px;
+	margin: 4px 0 4px 0;
+}
+
+ul li:first-child{
+	border-right: none;
+}
+
+footer{
+	position: absolute;
+    bottom: 30px;
+    text-align: center;
+    font-size: 1em; 
+    line-height: 1.5em;
+    text-indent: inherit;
+    width: 100%;
+    
+
+}
+footer span{
+	color: red;
+	font-weight: 700;
+}
+.remover span{
+	color: red;
+	font-weight: 700;
+	margin-right: 10px;
+}
+.remover p{
+	font-weight: 500;
+	display: inline;
+}
+.error{
+	background-color: red;
+	color: white;
+	webkit-transition: 2s ease;
+}
+.error p{
+	text-align: center;
+
+}

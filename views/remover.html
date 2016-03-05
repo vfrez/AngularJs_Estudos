@@ -1,0 +1,93 @@
+<!-- remover espaços Metodo 1 -->
+<div class="container">
+	<div class="row">
+		<center>
+			<h5>Remover espaços de uma string método 1</h5>
+		</center>
+			<div class="row">
+				<div class="input-field col s6 offset-s3">
+					<input name="texto1" type="text" ng-model="string">
+					<label for="texto1">texto</label>
+				</div>
+			</div>
+			<button class="btn col s2 offset-s5" ng-click="remover()">testar</button>
+			<table class="centered col s6 offset-s3">
+			    <thead>
+		      		<tr>
+		          		<th data-field="antes">Antes</th>
+		          		<th data-field="depois">Depois</th>
+		      		</tr>
+		    	</thead>
+				<tbody>
+		          	<tr>
+		            	<td>{{string}}</td>
+		            	<td>{{str}}</td>
+			  		</tr>
+				</tbody>
+		    </table>
+	</div>
+
+	<!-- remover espaços Metodo 2 -->
+	<div class="row">
+		<div class="remover">
+			<center>
+				<h5>Remover espaços de uma string método 2</h5>
+			</center>
+			<div class="row">
+				<div class="input-field col s6 offset-s3">
+					<input name="texto2"type="text" ng-model="string2">
+					<label for="texto2">texto</label>
+				</div>
+			</div>
+			<div class="row">
+				<button class="btn col s2 offset-s5" ng-click="remover2()">testar</button>
+			</div>
+			<div class="row">
+				<table class="centered col s6 offset-s3">
+				    <thead>
+			      		<tr>
+			          		<th data-field="antes">Antes</th>
+			          		<th data-field="depois">Depois</th>
+			      		</tr>
+			    	</thead>
+					<tbody>
+			          	<tr>
+			            	<td>{{string2}}</td>
+			            	<td>{{str2}}</td>
+				  		</tr>
+					</tbody>
+			    </table>
+		    </div>
+		    <div class="row">
+			    <blockquote class="col s6 offset-s3">
+					<p>aqui foi separada toda a string e juntado novamente sem os espaços usando "split" e "join" do Javascript</p>
+				</blockquote>
+			</div>
+		</div>
+	</div>
+	<!-- Trocar caracter -->
+	<div class="row">
+		<center>
+			<h5>Trocar um caracter por outro</h5>
+		</center>
+		<div class="input-field col s6 offset-s3">
+			<input name="texto3" type="text" ng-model="string3">
+			<label for="texto3">texto</label>
+		</div>
+		<button class="btn col s2 offset-s5" ng-click="trocaChar(string3)">testar</button>
+		<table class="centered col s6 offset-s3">
+		    <thead>
+	      		<tr>
+	          		<th data-field="antes">Antes</th>
+	          		<th data-field="depois">Depois</th>
+	      		</tr>
+	    	</thead>
+			<tbody>
+	          	<tr>
+	            	<td>{{string3}}</td>
+	            	<td>{{str3}}</td>
+		  		</tr>
+			</tbody>
+	    </table>	
+	</div>
+</div>

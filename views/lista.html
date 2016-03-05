@@ -1,0 +1,38 @@
+<div class="container">
+
+	<div class="row">
+		<div class="input-field col s4 offset-s3">
+	    	<input id="form_search" name="search" type="text"  ng-model="nome">
+	        <label for="search">Name</label>
+		</div>
+		<button class="btn btn-large col s2" ng-click="search()">teste</button>
+	</div>
+
+	<div class="row">
+	</div>
+
+	<div class="row">
+		<div ng-repeat="filme in filmes.Search">
+			<div class="col s6">
+		  		<div class="card">
+		    		<div class="card-content">
+		      			<h5><strong>{{filme.Title}}</strong></h5>
+		      			<p>{{filme.Year}}</p>
+		      			<a class="waves-effect waves-light btn modal-trigger" href="#modal1">Modal</a>
+		    		</div>
+	  			</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modal -->
+
+	<div id="modal1" class="modal">
+    <div class="modal-content">
+      <h4>Modal Header</h4>
+      <p>A bunch of text</p>
+    </div>
+    
+  </div>
+
+</div>
